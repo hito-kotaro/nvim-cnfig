@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/tohi/.local/share/nvim/site/pack/packer/start/papercolor-theme",
     url = "https://github.com/NLKNguyen/papercolor-theme"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/tohi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/tohi/.local/share/nvim/site/pack/packer/start/telescope.nvim",
