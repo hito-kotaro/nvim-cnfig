@@ -1,9 +1,33 @@
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "lua", "rust", "ruby", "vim" },
+local status, ts = pcall(require, "nvim0treesitter.confis")
+if (not status) then return end
 
-  sync_install = false,
-  auto_install = true,
-  highlight = {
-    enable = true,
-  },
+ts.setup {
+	highlight = {
+		enable = true,
+		disable = {}
+	},
+	indent = {
+		enable = true,
+		disable = {}
+	},
+	ensure_installed = {
+		"tsx",
+		"toml",
+		"fish",
+		"php",
+		"json",
+		"yaml",
+		"swift",
+		"css",
+		"html",
+		"lua"
+	},
+	autotag = {
+		enable = true
+	}
 }
+
+
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
+
