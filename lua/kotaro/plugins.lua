@@ -13,19 +13,32 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
+
+	-- color scheme
+	use 'NLKNguyen/papercolor-theme'
+
+	-- guide
 	use 'nvim-lualine/lualine.nvim'
 	use 'nvim-tree/nvim-tree.lua'
 	use 'nvim-tree/nvim-web-devicons'
+
+	-- highlight
 	use 'nvim-treesitter/nvim-treesitter'
-	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
-	use 'NLKNguyen/papercolor-theme'
 	use 'neovim/nvim-lspconfig'
+
+	-- auto complete
 	use 'onsails/lspkind-nvim'
 	use 'L3MON4D3/LuaSnip'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/nvim-cmp'
+
+
+	-- auto tag closing
+	use 'windwp/nvim-ts-autotag'
+	use 'windwp/nvim-autopairs'
+
 	-- use {
 	--   'nvim-telescope/telescope.nvim',
 	--  tag = '0.1.0',
