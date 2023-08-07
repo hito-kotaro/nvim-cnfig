@@ -30,6 +30,8 @@ return require('packer').startup(function(use)
 	use 'windwp/nvim-autopairs'
 	use 'glepnir/lspsaga.nvim'
 	use 'lewis6991/gitsigns.nvim'
+	use 'williamboman/mason.nvim'
+	use 'williamboman/mason-lspconfig.nvim'
 
 
 	-- use {
